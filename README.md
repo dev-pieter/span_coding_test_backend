@@ -18,3 +18,16 @@ printed in alphabetical order (as in the tie for 3rd place in the sample data).
 ---
 
 ### Installation instructions:
+
+-   Clone repo into local directory and navigate to:
+
+    -   ``` cd ranked_league ```
+
+-   For tests run:
+
+    -   ``` pip install pytest ```
+    -   ``` pytest ```
+
+-   To run application:
+
+    -   ``` python app.py ```
