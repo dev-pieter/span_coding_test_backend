@@ -10,7 +10,7 @@ def main():
     _league = League()
 
     print_divider()
-    print("Process file: *Enter file name*")
+    print("Process file: Enter txt file name (append the '.txt')")
     print("Exit: ' x '")
     print_divider()
 
