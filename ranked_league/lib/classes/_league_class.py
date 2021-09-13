@@ -1,4 +1,4 @@
-from lib import _team_class
+from lib.classes import _team_class
 
 class League:
     def __init__(self):
@@ -31,3 +31,9 @@ class League:
                 new_team = _team_class.Team(name)
                 new_team.draw()
                 self.teams[name] = new_team
+
+    def sort(self):
+        #sort teams by name (ASC)
+        name_sort = sorted(self.teams.items(), key=lambda x: x[1].name, reverse=False)
+        #return sorted teams by score (DESC)
+        return sorted(name_sort ,key=lambda x: x[1].league_score, reverse=True)
