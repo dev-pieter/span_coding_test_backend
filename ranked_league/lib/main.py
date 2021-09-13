@@ -29,8 +29,6 @@ def main():
         print("ERROR: couldnt find file.")
         print_divider()
 
-    # print(_league.sort())
-
     for idx, league_team in enumerate(_league.sort()) :
         formatted_output = "{0}. {1}, {2} pts".format(idx + 1, league_team[0], league_team[1].league_score)
         print(formatted_output)
